@@ -43,7 +43,7 @@ const hikingTrails = [wallowas, threeSisters, timberline, southCoast, hohRainfor
 
 for (i=0; i < hikingTrails.length; i++) {
 	console.log(hikingTrails[i])
-}
+};
 
 
 // ACP
@@ -51,15 +51,33 @@ for (i=0; i < hikingTrails.length; i++) {
 // Write a function called logOutThings that:
 // logs out the words "Here are your 5 things!", but using the array.length property to get the right number of things, don't "hard code" the number 5!
 
+let logOutThings = (array) => {
+	console.log(`Here are your ${array.length} things!`)
+};
+
+
 // Call your function with your array (logOutThings())
+
+logOutThings(hikingTrails);
+
 
 // Validate that it worked by looking at the output in the console.
 
 // Add one more item and add to your array. Validate that the output changes to "Here are your 6 things!"
 
+
 // ACP
 
 // Move the looping code from earlier step into the function
+
+const steens = {
+	name: "The Steens", 
+	terrain: "desert mountains", 
+	distanceInMiles: 26
+};
+
+steens.push(hikingTrails);
+
 
 // Validate that it logs the first message, then logs your array of things to the console
 
